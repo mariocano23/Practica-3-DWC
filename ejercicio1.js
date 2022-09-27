@@ -16,8 +16,6 @@ function toCani(cadena){
     for (let index = 1; index < 2+ Math.random()*4; index++) {
         cani = `${cani}H`;
     }
-
-
     return cani;
 }
 
