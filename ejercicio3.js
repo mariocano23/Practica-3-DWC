@@ -5,6 +5,11 @@ let letrasDNI = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S"
 function calcLetraDni(letras=[]) {
 
     let dni = prompt("Escribe un DNI sin la letra. (Escriba '-1' si ha acabado.)");
+    dni = parseInt(dni);
+    console.log(typeof(dni));
+    while((dni.length!=8&&dni!=-1)||typeof(dni)!="number"){
+        dni = prompt(`ERROR.El DNI introducido no es válido.(La longitud es incorrecta o un carácter no es válido.)/nEscribe un DNI sin la letra. (Escriba '-1' si ha acabado.)`);
+    }
     let letra = letrasDNI[dni%23];
         let letras2 = [...letras, letra];
     if(dni!=-1){
@@ -15,8 +20,7 @@ function calcLetraDni(letras=[]) {
             letrasFinal=`${letrasFinal}${letras[index]}`;
         } 
         console.log(letrasFinal);
-        return letrasFinal;
     }
 }
 
-console.log(calcLetraDni());
+calcLetraDni();

@@ -1,7 +1,7 @@
 "use strict";
 
 function mostrarFecha() {
-    console.log(Date().toString());
-    return Date().toString();
+    let fecha = new Date();
+    console.log(`${fecha.getDate()}-${fecha.getMonth()+1}-${fecha.getFullYear()}`);
 }
-console.log(setTimeout(mostrarFecha, 3000));
+setTimeout(mostrarFecha, 3000);

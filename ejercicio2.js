@@ -21,12 +21,11 @@ function temporizador(minutos, segundos) {
     }
     if (minutos==0&&segundos==0) {
         console.log("Se ha acabado el tiempo.");
-        return "Se ha acabado el tiempo."
     } else {
         setTimeout(temporizador ,1000,minutos,segundos);
     }
 
 }
 
-console.log(temporizador(0,10));
+temporizador(2,50);
 
