@@ -9,4 +9,4 @@ function dnisPorLetra(letra){
     }
     return dnis;
 }
-console.log(dnisPorLetra("A"));
+console.log(dnisPorLetra("M"));
