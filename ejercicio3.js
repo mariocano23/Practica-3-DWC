@@ -1,6 +1,6 @@
 "use strict";
 
-let letrasDNI = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"];
+let letrasDNI = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]; //Array para designar las letras de los DNIs.
 let letrasCalculadas = [];
 function calcLetraDni() {
     let dni = prompt("Escribe un DNI sin la letra. (Escriba '-1' si ha acabado.)");
