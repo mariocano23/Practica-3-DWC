@@ -1,7 +1,7 @@
 "use strict";
 
 function numerosPrimYPali() {
-
+    console.log("Se está ejecutando el programa espere un momento.")
     let primosYPalindromos= []
     let listado= "Números primos y palindromos hasta el 100000:\n";
     for (let num = 0; num <= 100000; num++) {
