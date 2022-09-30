@@ -1,7 +1,7 @@
 "use strict";
 
 function creaClientes(cadena){
-    let datos = cadena.split(':');
+    let datos = cadena.split(':'); //Separación de los datos 
     let cliente = {
         nombre: datos[0],
         apellidos: datos[1],
