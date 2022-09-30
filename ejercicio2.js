@@ -1,7 +1,7 @@
 "use strict";
 
 function temporizador(minutos, segundos) {
-    if(segundos===undefined){ //cambio de minutos a segundos si solo se introduce un parametro.
+    if(segundos===undefined){ //Cambio de minutos a segundos si solo se introduce un parametro.
         segundos=minutos; 
         minutos=0;
     }
@@ -22,7 +22,7 @@ function temporizador(minutos, segundos) {
     if (minutos==0&&segundos==0) {
         console.log("Se ha acabado el tiempo.");
     } else {
-        setTimeout(temporizador ,1000,minutos,segundos);
+        setTimeout(temporizador ,1000,minutos,segundos); //Uso del setTimeout para hacer recursividad cada segundo.
     }
 
 }
